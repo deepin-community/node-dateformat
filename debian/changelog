@@ -1,0 +1,66 @@
+node-dateformat (3.0.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use pkg-js-tools auto test & install
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 05 May 2020 11:45:36 +0200
+
+node-dateformat (3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 3.0.0
+  * Update Vcs-* fields
+  * Fix version check in watch file
+  * Add patch to fix tests expectations
+  * Honor nocheck
+  * Drop crazy dependencies
+  * Disambiguate short descriptions
+  * Install node package independently
+  * Standards-Version 4.3.0
+
+ -- Jérémy Lal <kapouer@melix.org>  Mon, 07 Jan 2019 12:09:30 +0100
+
+node-dateformat (2.0.0-1) unstable; urgency=medium
+
+  * New upstream version 2.0.0
+    + bin/cli.js was removed by upstream
+  * Bump Standards-Version to 4.0.0
+
+ -- Marcelo Jorge Vieira <metal@debian.org>  Sat, 09 Sep 2017 11:52:47 -0300
+
+node-dateformat (1.0.11-4) unstable; urgency=medium
+
+  * Team upload
+  * Set TZ=UTC for tests to fix FTBFS (Closes: #863934)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 20 Jun 2017 16:25:57 +0530
+
+node-dateformat (1.0.11-3) unstable; urgency=high
+
+  * Fixed FTBFS (Closes: #861592); Thanks Florian Vessaz
+
+ -- Marcelo Jorge Vieira <metal@debian.org>  Sun, 07 May 2017 12:42:21 -0300
+
+node-dateformat (1.0.11-2) unstable; urgency=medium
+
+  * Add node-underscore to dependency (Closes: #843529)
+
+ -- Sruthi Chandran <srud@disroot.org>  Tue, 08 Nov 2016 21:05:27 +0530
+
+node-dateformat (1.0.11-1) unstable; urgency=low
+
+  [ Marcelo Jorge Vieira (metal) ]
+  * Initial release (Closes: #718936)
+
+ -- Sruthi Chandran <srud@disroot.org>  Thu, 03 Nov 2016 19:55:36 +0530

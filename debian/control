@@ -1,0 +1,39 @@
+Source: node-dateformat
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Marcelo Jorge Vieira <metal@debian.org>,
+           Gustavo Noronha Silva <kov@debian.org>,
+           Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper-compat (= 12)
+ , mocha
+ , node-underscore
+ , pkg-js-tools (>= 0.9.35~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-dateformat
+Vcs-Git: https://salsa.debian.org/js-team/node-dateformat.git
+Homepage: https://github.com/felixge/node-dateformat
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-dateformat
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: JavaScript Date Format - Node.js module
+ Although JavaScript provides a bunch of methods for getting and setting
+ parts of a date object, it lacks a simple way to format dates and times
+ according to a user-specified mask. This module try to fill that gap.
+ .
+ This package contains dateformat usable with Node.
+
+Package: libjs-dateformat
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: javascript-common
+Description: JavaScript Date Format - browser module
+ Although JavaScript provides a bunch of methods for getting and setting
+ parts of a date object, it lacks a simple way to format dates and times
+ according to a user-specified mask. This module try to fill that gap.
+ .
+ This package contains dateformat usable directly in web browsers.
