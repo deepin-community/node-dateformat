@@ -1,1 +1,2 @@
-fix_utc_in_tests.patch
+#fix_utc_in_tests.patch
+add-cjs-support.patch

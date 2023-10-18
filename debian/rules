@@ -1,3 +1,9 @@
 #!/usr/bin/make -f
 %:
-	dh $@ --with nodejs
+	dh $@
+
+override_dh_auto_build:
+	babeljs src --out-dir lib
+	babeljs --plugins @babel/transform-modules-commonjs src/dateformat.js -o lib/_dateformat.cjs
+	cp debian/index.cjs lib/dateformat.cjs
+	terser lib/dateformat.js -o lib/dateformat.js

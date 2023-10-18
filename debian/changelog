@@ -1,3 +1,81 @@
+node-dateformat (5.0.3+~5.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Sun, 16 Jul 2023 07:56:52 +0400
+
+node-dateformat (5.0.3+~5.0.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.2
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Tue, 09 May 2023 20:26:21 +0400
+
+node-dateformat (5.0.3-5) unstable; urgency=medium
+
+  * Team upload
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.1
+  * Fix commonjs export (Closes: #1011279)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 19 May 2022 22:15:41 +0530
+
+node-dateformat (5.0.3-4) unstable; urgency=medium
+
+  * Team upload
+  * Add Breaks: node-gulp-util (<< 3.0.36+~cs7.1.15~)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 17 May 2022 18:29:30 +0530
+
+node-dateformat (5.0.3-3) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable (node-gulp-util broken by this update can be removed
+    from the archive as deprecated upstream)
+  * Switch to terser instead of uglifyjs
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 14 May 2022 12:54:50 +0530
+
+node-dateformat (5.0.3-2) experimental; urgency=medium
+
+  * Team upload
+  * Add conditional exports for cjs support (Closes: #1010888)
+  * Cleanup generated files
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 12 May 2022 16:54:47 +0530
+
+node-dateformat (5.0.3-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + libjs-dateformat, node-dateformat: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+
+  [ Xavier Guimard ]
+  * New upstream version 4.3.1
+  * Drop patch
+  * Update build, use babel7
+
+  [ Yadd ]
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+
+  [ Pirate Praveen ]
+  * New upstream version 5.0.3
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 12 May 2022 14:35:20 +0530
+
 node-dateformat (3.0.0-2) unstable; urgency=medium
 
   * Team upload
