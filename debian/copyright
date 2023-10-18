@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: dateformat
 Source: https://github.com/felixge/node-dateformat
+ https://registry.npmjs.org/@types/dateformat
 
 Files: *
 Copyright: 2007-2009 Steven Levithan <stevenlevithan.com>
@@ -8,6 +9,10 @@ License: Expat
 
 Files: debian/*
 Copyright: 2013 Marcelo Jorge Vieira <metal@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat

@@ -1,16 +1,18 @@
 Description: tests assume results have "UTC" has time zones, they have not
 Forwarded: https://github.com/felixge/node-dateformat/issues/41
 Author: Jérémy Lal <kapouer@melix.org>
-Last-Update: 2019-01-07
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2020-12-07
+
 --- a/test/test_formats.js
 +++ b/test/test_formats.js
 @@ -52,8 +52,7 @@
-       var now = new Date(2014, 10, 26, 13, 19, 44);
        var tzOffset = timezoneOffset(now);
-       var expected = expects[key].replace(/%TZ_PREFIX%/, 'GMT')
--                                 .replace(/%TZ_OFFSET%/g, tzOffset)
--                                 .replace(/GMT\+0000/g, 'UTC');
-+                                 .replace(/%TZ_OFFSET%/g, tzOffset);
-       if (key === 'isoUtcDateTime') {
+       var expected = expects[key]
+         .replace(/%TZ_PREFIX%/, "GMT")
+-        .replace(/%TZ_OFFSET%/g, tzOffset)
+-        .replace(/GMT\+0000/g, "UTC");
++        .replace(/%TZ_OFFSET%/g, tzOffset);
+       if (key === "isoUtcDateTime") {
          var offset = parseOffset(now);
-         now.setHours(now.getHours() - offset.hours,
+         now.setHours(
